@@ -107,7 +107,7 @@
 								    listeners[v] = ListenerMap[v];
 								}
 								
-								sdk.init("http://127.0.0.1:8000/v1",res.data.appId,res.data.userId,res.data.imUserSign,listeners,function (sdk) {
+								sdk.init(res.data.appId,res.data.userId,res.data.imUserSign,listeners,function (sdk) {
 							    if(sdk){
 							        console.log('sdk 成功连接的回调, 可以使用 sdk 请求数据了.');
 									return uni.switchTab({
